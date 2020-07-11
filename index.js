@@ -9,7 +9,7 @@ server.use(express.json());
 server.use(`/api/posts`, PostsRouter)
 
 server.get(`/`, (req, res) => {
-  res.send({ message: `It's working` })
+  res.send({ message: `Server up and running` })
 })
 
 const port = 5000;
