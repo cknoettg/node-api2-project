@@ -77,7 +77,7 @@ router.post(`/:id/comments`, async (req, res) => {
     res.status(500).json({ message: 'There was an error while saving the comment to the database' })
   }
 })
-
+//we can get rid of req.body and logic 86-88
 router.delete(`/:id`, async (req, res) => {
   const { id } = req.params;
   const post = req.body;
